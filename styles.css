@@ -1,3 +1,94 @@
+/* ========== GOOGLE FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+/* ========== VARIABLE CSS ========== */
+:root {
+   --header-height: 3.5rem;
+
+   /* ========== COLORS ========== */
+   /* Color mode HSL (hue, saturation, lightness) */
+   --soft-orange: hsl(35, 77%, 62%);
+   --soft-red: hsl(5, 85%, 63%);
+   --off-white: hsl(36, 100%, 99%);
+   --gray-blue: hsl(233, 8%, 79%);
+   --dark-gray-blue: hsl(236, 13%, 42%);
+   --very-dark-blue: hsl(240, 100%, 5%);
+
+   /* ========== Font and typography ========== */
+   /* .5rem = 8px | 1rem = 16px  */
+   --body-font: 'Inter', sans-serif;
+   --base-font-size: 15px;
+   --biggest-font-size: 2.25rem;
+   --h1-font-size: 1.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+   --smaller-font-size: .75rem;
+
+   /* ========== Font weight ========== */
+   --font-regular: 400;
+   --font-medium: 700;
+   --font-bold: 800;
+
+   @media screen and (min-width: 1024px) {
+      --biggest-font-size: 4rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+   }
+}
+
+
+/* ========== BASE STYLES / RESET ========== */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: var(--body-font);
+   font-size: var(--normal-font-size);
+   background-color: var(--off-white);
+   color: var(--dark-gray-blue);
+}
+
+h1 {
+   color: var(--very-dark-blue);
+   font-weight: var(--h1-font-size);
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+/* ========== REUSABLE CSS CLASSES ========== */
+.container {
+   max-width: 1440px;
+}
+
+
+
+
 .attribution {
    font-size: 11px;
    text-align: center;
