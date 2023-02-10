@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/crystgoodwin/product-preview-card/blob/main/images/product-preview-screenshot.png)
+![](https://github.com/crystgoodwin/news-homepage/blob/main/assets/images/news-homepage-screenshot.png)
 
 
 ### Links
 
-- Live Site URL: [Live site](https://crystgoodwin.github.io/product-preview-card/)
+- Live Site URL: [Live site](https://crystgoodwin.github.io/news-homepage/)
 
 ### Built with
 
