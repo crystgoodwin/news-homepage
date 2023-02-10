@@ -19,7 +19,7 @@
    /* .5rem = 8px | 1rem = 16px  */
    --body-font: 'Inter', sans-serif;
    --base-font-size: 15px;
-   --biggest-font-size: 2.25rem;
+   --biggest-font-size: 3.5rem;
    --h1-font-size: 6rem;
    --h2-font-size: 1.25rem;
    --h3-font-size: 1rem;
@@ -61,7 +61,8 @@ body {
    font-size: var(--normal-font-size);
    background-color: var(--off-white);
    color: var(--dark-gray-blue);
-   padding: 20px;
+   padding: 20px 50px;
+
 }
 
 h1 {
@@ -140,7 +141,7 @@ p {
 }
 
 .nav-link {
-   color: var(--very-dark-blue);
+   color: var(--dark-gray-blue);
    font-size: var(--small-font-size);
    transition: color .3s;
 }
@@ -162,12 +163,12 @@ p {
 
 /* Main Section */
 .main {
-   padding: 1rem 1.5rem;
+   padding-top: 1rem;
 }
 
 .main-container {
    display: flex;
-   gap: 2rem;
+   gap: 3rem;
    /* padding: 2.5rem; */
 }
 
@@ -203,6 +204,12 @@ button {
    margin-bottom: 2rem;
 }
 
+button:hover {
+   background-color: var(--very-dark-blue);
+   transition: 0.5s;
+   cursor: pointer;
+}
+
 /* Article Aside */
 .article-aside {
    background-color: var(--very-dark-blue);
@@ -228,6 +235,11 @@ button {
 .aside-subtitle {
    color: var(--off-white);
    padding-bottom: 1rem;
+}
+
+.aside-subtitle:hover {
+   color: var(--soft-orange);
+   cursor: pointer;
 }
 
 /* Article Highlights */
@@ -264,10 +276,16 @@ button {
    padding-bottom: 10px;
 }
 
+.highlight-subtitle:hover {
+   color: var(--soft-red);
+   cursor: pointer;
+}
+
 
 .attribution {
    font-size: 11px;
    text-align: center;
+   margin-top: 10rem;
 }
 
 .attribution a {
@@ -277,19 +295,23 @@ button {
 /* ========== MEDIA QUERIES ========== */
 
 @media screen and (max-width: 767px) {
+
    .nav-menu {
       position: fixed;
       top: 0;
       right: -100%;
       background-color: var(--off-white);
       width: 65%;
-      padding-left: 1.5rem;
-      padding-top: 10rem;
+      padding: 10rem 1.875rem 10rem 1.5rem;
       transition: right .4s;
    }
 
    .nav-link {
       font-size: var(--h2-font-size);
+   }
+
+   .nav {
+      column-gap: 3rem;
    }
 
    .article-main-img {
@@ -326,11 +348,34 @@ button {
    }
 
    .main {
-      padding: 0;
       margin-top: 2rem;
    }
 
+   body {
+      padding-left: 1rem;
+      padding-right: 1rem;
+   }
+
 }
+
+@media screen and (min-width: 767px) {
+
+   .nav-toggle,
+   .nav-close {
+      display: none;
+   }
+
+   .nav-list {
+      flex-direction: row;
+      column-gap: 3rem;
+   }
+
+   .nav-menu {
+      margin-left: auto;
+   }
+}
+
+@media screen and (max-width: 375px) {}
 
 .show-menu {
    right: 0;
